@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<div id="openseadragon1" style="width: 800px; height: 600px;"></div>
-<script src="/openseadragon/openseadragon.min.js"></script>
-<script type="text/javascript">
-    var viewer = OpenSeadragon({
-        id: "openseadragon1",
-        prefixUrl: "/openseadragon/images/",
-        tileSource: "/openseadragon/images/mydz.dzi"
-    });
-</script>
-</body>
+<head>
+    <style type="text/css">
+      #foo {
+        width: 400px;
+        height: 300px;
+      }
+    </style>
+  </head>
+	<body>
+		<div id="openseadragon1"></div>
+		<script src="/openseadragon/openseadragon.min.js"></script>
+		<script>
+			var viewer = OpenSeadragon({
+				id: 'openseadragon1',
+				prefixUrl: 'openseadragon/images/',
+				tileSource: 'dzi/mydz.dzi'
+			});
+		</script>
+	</body>
 </html>
