@@ -3,11 +3,13 @@
 	<head>
     <style type="text/css">
       #openseadragon1 {
-        width: <script>window.screen.availHeight</script>;
+        width: 0;
         height: <script>window.screen.availWidth</script>;
       }
     </style>
 </head>
+<script>document.getElementById("head").style.width =  window.screen.availWidth;</script>
+<script>document.getElementById("head").style.height =  window.screen.availHeight;</script>
 	<body>
 		<div id="openseadragon1"></div>
 		<script src="/openseadragon/openseadragon.min.js"></script>
