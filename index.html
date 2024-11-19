@@ -8,8 +8,8 @@
       }
     </style>
 </head>
-<script>document.getElementById("head").style.width =  window.screen.availWidth;</script>
-<script>document.getElementById("head").style.height =  window.screen.availHeight;</script>
+<script>document.getElementById("openseadragon1").style.width =  window.screen.availWidth;</script>
+<script>document.getElementById("openseadragon1").style.height =  window.screen.availHeight;</script>
 	<body>
 		<div id="openseadragon1"></div>
 		<script src="/openseadragon/openseadragon.min.js"></script>
@@ -20,5 +20,9 @@
 				tileSources: 'dzi/mydz.dzi'
 			});
 		</script>
+		<script>var w = window.innerWidth;
+		var h = window.innerHeight;
+		document.getElementById("openseadragon1").style.width =  w;
+		document.getElementById("openseadragon1").style.height =  h;</script>
 	</body>
 </html>
