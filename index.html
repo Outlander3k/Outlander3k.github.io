@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		var w = window.innerWidth;
-		var h1 = window.innerHeight;
-		<div id="openseadragon1" style="width:" w; "height:" h1;></div>
+		<div id="openseadragon1" style="width: 800px; height: 600px;"></div>
 		<script src="/openseadragon/openseadragon.min.js"></script>
 		<script>
 			var viewer = OpenSeadragon({
@@ -12,8 +10,8 @@
 				tileSources: 'dzi/mydz.dzi'
 			});
 		</script>
-		<script>var w = window.screen.availWidth;
-		var h = window.screen.availHeight;
+		<script>var w = window.screen.innerWidth;
+		var h = window.screen.innerHeight;
 		body.getElementById("openseadragon1").style.width =  w;
 		body.getElementById("openseadragon1").style.height =  h;</script>
 	</body>
